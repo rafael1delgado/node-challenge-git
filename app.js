@@ -85,10 +85,46 @@ function exerciseFiveDotOne(string) {
     console.log("Descifrar:", string);
     console.log(arrayString);
 
-    plane = arrayString.find((element, index) => {
-        return element === encryption[index];
+
+    plane = arrayString.map(e => {
+        return encryption.findIndex(element => {return e == element});
     });
-    console.log(plane);
+    console.log("Numero", "".concat(...plane));
+}
+
+function exerciseSix() {
+    const c = [
+        {pies:"pies"},
+        [["cabeza"]],
+        function(){
+         return "cuerpo"
+        }
+    ];
+    
+    let i = 0;
+    for(;i < c.length; i++) {
+        console.log(typeof(c[i]))
+        if(typeof (c[i]) == 'object') {
+            console.log(c[i][0]);
+        } else if (typeof(c[i]) == 'function') {
+            console.log(c[i]);
+        }
+    }
+}
+
+function exerciseSeven() {
+    const menu = ["burger", "papas", "gaseosa", "helado"];
+
+    menu.push("agua");
+    console.log("-------------------");
+    console.log("MENU - MENU - MENU")
+    console.log("-------------------");
+    menu.map((e, index) => {
+        console.log((index + 1) + ")", e);
+        console.log("-------------------");
+    })
+
+
 }
 
 // Functions adicional
@@ -102,3 +138,5 @@ exerciseThree();
 exerciseFour();
 exerciseFive(75123);
 exerciseFiveDotOne('.qq*');
+// exerciseSix();
+exerciseSeven();
