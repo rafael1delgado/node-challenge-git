@@ -76,14 +76,16 @@ function exerciseFive(number) {
 
     let stringNumber = "" + number;
     let arrayString = [...stringNumber];
-    let stringEncrytion = [];
 
+    // console.log(arrayString);
+    let stringEncrytion = [];
     console.log("Numero:", number);
 
     stringEncrytion = arrayString.map((char) => {
         return findEncry(char);
     });
 
+    // console.log(stringEncrytion);
     console.log("Cifrado:", stringEncrytion.join(''));
 }
 
@@ -91,6 +93,7 @@ function exerciseFiveDotOne(string) {
     console.log('===== EXERCISE 5.1 =====');
 
     let arrayString = [...string];
+    // console.log(arrayString);
     let plane = [];
 
     console.log("Descifrar:", string);
@@ -99,6 +102,7 @@ function exerciseFiveDotOne(string) {
         return encryption.findIndex(element => {return e == element});
     });
 
+    // console.log(plane);
     console.log("Numero:", plane.join(''));
 }
 
