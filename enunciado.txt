@@ -1,0 +1,143 @@
+==========================================
+
+1) const a = ["foo", "alfa", "ram"];
+ 
+  seleccionar las primeras letras de los 3 elementos
+  y mostrar: "far"
+
+
+==========================================
+
+2) const b = ["hola", "mundo", "desde", "vscode"];
+   
+   mostrar por pantalla: "hola - mundo, desde vscode."
+
+
+==========================================
+
+3) const nombres = [
+    {nombre:"foo"},
+    {nombre:"bar"},
+    {nombre:"qux"},
+    [nombre:"ram"]
+   ];
+
+   Hacer 3 procedimientos de iteración mediante los ciclos:
+   map, while y for.
+   
+   emitir:
+
+   1- nombre: foo
+   2- nombre: bar
+   3- nombre: qux
+   4- nombre: ram
+
+
+==========================================
+
+4) productos.js
+   const productos = ["tv", "tablet", "pc", "desktop"];
+   
+   precios.js
+   const precios = ["1000 usd", "500 usd", "2000 usd", "700 usd"];  
+     
+   se tiene 2 array cada uno en un archivo diferente,
+   por ejemplo:
+ 
+   el archivo productos.js contine el array productos
+   el archivo precios.js contiene el array precios
+
+   se desea crear un archivo llamado:
+   mostrar_productos.js
+
+   en ella mediante el uso de ciclos sea "for", "while" ó "map"
+   crear un array que contenga los datos de los array mostrados
+   de la siguiente forma:    
+   
+    [{
+      tv:"1000usd"
+    },
+    {
+      tablet:"500usd"
+    },
+    {
+      pc:"2000 usd"
+    },
+    {
+      desktop:"700 usd"
+    }];
+
+
+
+==========================================
+
+5) eres un espía ahora debes crear un sistema de cifrado
+   para los números donde si ingresan un número: 0,1,2,3,4,5,6,7,8,9
+   debes hacer una sustitución de valor
+   
+   0 = *
+   1 = .
+   2 = ?
+   3 = /
+   4 = x
+   5 = !
+   6 = #
+   7 = &
+   8 = ¿
+   9 = q
+   
+   es decir si ingreso el valor de 100 = .**
+   otro ejemplo si ingreso 75123 = &!.?/
+   
+   adicional debes descifrar el valor codificado
+   si recibes el valor de .qq* = 1990
+   otro ejemplo si ingreso ?* = 2000
+   
+   NOTA: se desea el uso de funciones y crear un sistema modulos
+         de separación de archivos.
+
+
+==========================================
+
+6) const c = [
+     {pies:"pies"},
+     [["cabeza"]],
+     function(){
+      return "cuerpo"
+     }
+   ];
+
+  dado el array loco anterior, mostrar lo siguiente
+  por la consola:
+ 
+  "cabeza"
+  "cuerpo"
+  "pies"  
+
+  se recomienda usar el ciclo "for" como medio de iteración
+
+
+==========================================
+
+7) const menú = ["burger", "papas", "gaseosa", "helado"];
+   
+  mostrar por consola el menú mediante "map" adicional antes
+  de mostrar el menú, debes agregar al final del menú después
+  del item helado,el ítem "agua"
+   
+
+  -------------------
+  MENU - MENU - MENU
+  -------------------
+  1) burger
+  -------------------
+  2) papas
+  -------------------
+  3) gaseosa
+  -------------------
+  4) helado
+  -------------------
+  5) agua
+  -------------------
+
+==========================================
