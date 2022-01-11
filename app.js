@@ -10,10 +10,8 @@ function exerciseOne() {
     let result = [];
 
     result = a.map((element) => {
-        return element[0];
+        console.log( element[0] );
     });
-
-    console.log(result.join(''));
 }
 
 function exerciseTwo() {
@@ -68,7 +66,6 @@ function exerciseFour() {
     });
 
     console.log(arrayProducts);
-
 }
 
 function exerciseFive(number) {
@@ -146,8 +143,6 @@ function exerciseSeven() {
         console.log((index + 1) + ")", e);
         console.log("-------------------");
     })
-
-
 }
 
 // Functions adicional
