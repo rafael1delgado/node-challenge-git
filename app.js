@@ -4,6 +4,7 @@ const encryption = require('./cifrado');
 
 
 function exerciseOne() {
+    console.log('===== EXERCISE 1 =====');
     const a = ["foo", "alfa", "ram"];
 
     let result = [];
@@ -12,16 +13,20 @@ function exerciseOne() {
         return element[0];
     });
 
-    console.log("".concat(...result));
+    console.log(result.join(''));
 }
 
 function exerciseTwo() {
+    console.log('===== EXERCISE 2 =====');
+
     const b = ["hola", "mundo", "desde", "vscode"];
 
     console.log(b[0] + ' - ' + b[1] + ',', b[2], b[3] + '.');
 }
 
 function exerciseThree() {
+    console.log('===== EXERCISE 3 =====')
+
     const nombres = [
         {nombre:"foo"},
         {nombre:"bar"},
@@ -52,6 +57,8 @@ function exerciseThree() {
 }
 
 function exerciseFour() {
+    console.log('===== EXERCISE 4 =====');
+
     let arrayProducts = [];
 
     products.map((product, index) => {
@@ -65,6 +72,8 @@ function exerciseFour() {
 }
 
 function exerciseFive(number) {
+    console.log('===== EXERCISE 5 =====');
+
     let stringNumber = "" + number;
     let arrayString = [...stringNumber];
     let stringEncrytion = [];
@@ -75,44 +84,54 @@ function exerciseFive(number) {
         return findEncry(char);
     });
 
-    console.log("Cifrado", "".concat(...stringEncrytion));
+    console.log("Cifrado:", stringEncrytion.join(''));
 }
 
 function exerciseFiveDotOne(string) {
+    console.log('===== EXERCISE 5.1 =====');
+
     let arrayString = [...string];
     let plane = [];
 
     console.log("Descifrar:", string);
-    console.log(arrayString);
-
 
     plane = arrayString.map(e => {
         return encryption.findIndex(element => {return e == element});
     });
-    console.log("Numero", "".concat(...plane));
+
+    console.log("Numero:", plane.join(''));
 }
 
 function exerciseSix() {
+    console.log('===== EXERCISE 6 =====');
+
     const c = [
         {pies:"pies"},
         [["cabeza"]],
         function(){
-         return "cuerpo"
+            return "cuerpo"
         }
     ];
     
     let i = 0;
     for(;i < c.length; i++) {
-        console.log(typeof(c[i]))
-        if(typeof (c[i]) == 'object') {
-            console.log(c[i][0]);
-        } else if (typeof(c[i]) == 'function') {
-            console.log(c[i]);
+        switch (i) {
+            case 0:
+                console.log(c[i]["pies"]);
+                break;
+            case 1:
+                console.log(c[i][0][0]);
+                break;
+            case 2:
+                console.log(c[i]());
+            break;
         }
     }
 }
 
 function exerciseSeven() {
+    console.log('===== EXERCISE 7 =====');
+
     const menu = ["burger", "papas", "gaseosa", "helado"];
 
     menu.push("agua");
@@ -138,5 +157,5 @@ exerciseThree();
 exerciseFour();
 exerciseFive(75123);
 exerciseFiveDotOne('.qq*');
-// exerciseSix();
+exerciseSix();
 exerciseSeven();
