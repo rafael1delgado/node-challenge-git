@@ -7,9 +7,7 @@ function exerciseOne() {
     console.log('===== EXERCISE 1 =====');
     const a = ["foo", "alfa", "ram"];
 
-    let result = [];
-
-    result = a.map((element) => {
+    a.map((element) => {
         console.log( element[0] );
     });
 }
@@ -74,7 +72,7 @@ function exerciseFive(number) {
     let stringNumber = "" + number;
     let arrayString = [...stringNumber];
 
-    // console.log(arrayString);
+    console.log(arrayString);
     let stringEncrytion = [];
     console.log("Numero:", number);
 
@@ -82,7 +80,7 @@ function exerciseFive(number) {
         return findEncry(char);
     });
 
-    // console.log(stringEncrytion);
+    console.log(stringEncrytion);
     console.log("Cifrado:", stringEncrytion.join(''));
 }
 
@@ -90,16 +88,14 @@ function exerciseFiveDotOne(string) {
     console.log('===== EXERCISE 5.1 =====');
 
     let arrayString = [...string];
-    // console.log(arrayString);
+    console.log(arrayString);
     let plane = [];
 
     console.log("Descifrar:", string);
 
-    plane = arrayString.map(e => {
-        return encryption.findIndex(element => {return e == element});
-    });
+    plane = arrayString.map(e => encryption.findIndex(element => e == element));
 
-    // console.log(plane);
+    console.log(plane);
     console.log("Numero:", plane.join(''));
 }
 
